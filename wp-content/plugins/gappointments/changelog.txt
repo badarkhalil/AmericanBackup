@@ -1,0 +1,142 @@
+============================
+Version 1.9.7 ( 02 Mar 2022 )
+============================
+
+    - Fixed bug: "Forms" --> "Settings" --> "gAppointments" --> "Form booking category" (function gf_get_field_type_postid).
+
+============================
+Version 1.9.6 ( 13 May 2021 )
+============================
+
+    - Feature: Ability to dynamically change the calendar service without resetting the provider selection during a booking
+    - Fixed bug: Time slot capacity pop-up not displayed when available slot capacity is reduced to one
+    - Fixed bug: "Custom" service type creation validation issues
+    - Enhancement: Automated "Custom" service type appointment slot sorting
+    - Feature: "Payment Order Details" appointment field will only return entries from the form in which the appointment was booked
+    - Fixed bug: Conflicts with some WordPress themes and theme builders
+    - Fixed bug: Failure loading the calendar widget when service/provider title contained special characters
+    - Fixed bug: Calendar errors returning incorrect text messages
+    - Fixed bug: Processing payment detection and handling issues during new appointment creation
+    - Fixed bug: Unnecessary insertions of emptys spaces after calendar field merge tag
+    - Fixed bug: Conflict with Advanced Custom Fields PRO and Advanced Custom Fields Gravity Forms add-ons
+    - Feature: New appointment time-end shortcode added in "Date & Time" translations
+    - Feature: New hook that allows to override Google Calendar event description during calendar synchronization
+    - Feature: New hook that allows to define additional custom hints for Google Calendar event description
+    - Fixed bug: Issues assigned new appointments to the global provider
+    - Fixed bug: Google Calendar access token issues within provider syncronization setup
+    - Fixed bug: "jQuery(...).chosen is not a function" front-end error
+    - Fixed bug: Review page issues with all date appointment slots
+
+============================
+Version 1.9.5.2 ( 18 Nov 2020 )
+============================
+
+    - Fixed bug: Appointment values saved incorrectly when a service is assigned to multiple providers
+    - Fixed bug: Inconsistencies in Google Calendar two-way sync comparison functionality
+    - Fixed bug: Possible undefined index error message after form submission
+    - Fixed bug: Cannot change provider to global provider in entry edits
+    - Fixed bug: Submission validation bug when calendar field is hidden
+    - Fixed bug: Possibility that a notification with undefined values is sent
+    - Fixed bug: Submission issue due to duplicate get provider options method
+    - Fixed bug: Submission issue when multiple bookings and prevent double bookings options are enabled
+    - Fixed bug: Issue displaying Gravity Forms entries
+    - Enhancement: Show calendar month of first available appointment
+
+============================
+Version 1.9.5.1 ( 22 Oct 2020 )
+============================
+
+    - Fixed bug: Appointments availability issue: capacity not reduced after new appointment booking
+    - Fixed bug: Issues with payment request authorization and capture
+    - Fixed bug: Payment issues due to Gravity Forms conditional logic
+    - Fixed bug: Script function incompatibilities
+
+============================
+Version 1.9.5 ( 6 Oct 2020 )
+============================
+
+    - Fixed bug: Performance issues and slowdowns caused by translation functions
+    - Fixed bug: Various duplicate query calls in booking form field pages
+    - Enhancement: Improved how appointment entry data is processed and saved (Compatibility improvements with 3rd party integration services, i.e. Zapier, ActiveCampaign. And other Gravity Forms add-ons, i.e. Stripe, Paypal)
+    - Enhancement: "Communication" with Google Calendar API
+    - Enhancement: Added support for Google Calendar recurring events
+    - Fixed bug: Extreme performance issues related to Google Calendar two-way sync
+    - Fixed bug: Google Calendar One-way sync functionality not working as defined
+    - Fixed bug: Canceled/Re-confirmed appointments do not re-appear/disappear in the booking calendar
+    - Fixed bug: Google Calendar pending and confirmed event colors do not change dynamically
+    - Feature: Max bound option in Google Calendar settings (allows to define how far into future events should be fetched from Google Calendar)
+    - Feature: Added Synchronization mode option to provider page
+    - Feature: Added option to provider and Calendar settings pages (allows to set a global or server-based availability)
+    - Feature: Added a review page option in Gravity Forms settings (allows to show a review page before a form submission)
+    - Fixed bug: Search functionality in Appointments page not working
+    - Enhancement: Two field column sorting in appointments list page
+    - Fixed bug: Possible issues with WordPress redirects
+    - Fixed bug: New appointment submission issues when service capacity is set to 1
+    - Enhancement: Improved compatibility with Gravity Forms entry export feature
+    - Enhancement: Validations in edit provider page
+    - Feature: Appointment booking date can now be edited in Gravity Forms entries
+    - Fixed bug: Appointment cancellation issues due to time zone value
+    - Fixed bug: Appointments list page display incompatibilities on mobile devices
+    - Fixed bug: Spelling mistake in notification email calendar links
+
+============================
+Version 1.9.4 ( 11 June 2020 )
+============================
+
+	- Enhancement: New provider can prevent duplicate title
+    - Enhancement: Appointments page now have available options in "Bulk actions" - "Cancel", "Confirm" appointments
+    - Feature: Appointments page now have an option in "Bulk actions" - "Resend Email Notifications"
+    - Feature: Appointments page can be sorted by chosen columns
+    - Feature: Each provider now have a field "location", it can be synced with appointments in google calendar
+    
+
+============================
+Version 1.9.3 ( 24 Oct 2019 )
+============================
+
+    - Fixed bug: Fixed an issue with ICS generation
+    - Fixed bug: Default google calendar for appointments with no provider regardless of settings
+    - Fixed bug: Assets unreachable 
+    - Fixed bug: Appointment date not being picked p in notifications upon submitting a form entry
+    - Fixed bug: Email being picked up instead of phone number
+    - Enhancement: Made some changes to work with thrive architect.
+    - Enhancement: Added ability to complete appointments after X hours instead of instant completion
+    - Enhancement: Extended cancellation functionality to allow cancelling until X hours before teh appointment
+    - Feature: Clients can reschedule their appointments from the front-end
+
+
+
+============================
+Version 1.9.2 ( 17 Jul 2019 )
+============================
+
+    - Fixed bug: Fixed google calendar api authentication not working in some cases
+    - Fixed bug: Some calendar appearance colors not affecting front-end calendar
+    - Fixed bug: Removed deprecated function usages
+    - Fixed bug: Fixed an issue where appointment date was not being sent in initial gforms notification
+    - Fixed bug: Custom time slots with the same starting hour being removed when saving service.
+    - Fixed bug: Bad available time slot calculation on certain cases
+    - Enhancement: Added %appointment_duration% merge tag to certain appointment notifications
+    - Enhancement: Added the ability to override appointment email template, see the documentation for details
+    - Enhancement: Provider and Service fields are now being sent as names instead of ids when exporting gravity forms entries
+    - Enhancement: Added ability to paginate appointments in shortcodes, see the documentation for details.
+    - Enhancement: Added ability to add a description to appointments when generating calendar links (ical)
+    - Enhancement: Documentation is being moved to an online source instead of local ()
+
+============================
+Version 1.9.1 ( 21 Dec 2018 )
+============================
+
+    - New Feature: Google Calendar synchronization.
+
+============================
+Version 1.9 ( 8 Oct 2018 )
+============================
+
+    - Feature: Outlook event generator.
+    - Update: Updated CMB2 library
+    - Fixed bug: Email time always at 12:00AM
+    - Fixed bug: Booking problem when submitting removed slots.
+    - Fixed bug: Calendar is required when not marked as required.
+    - Enhancement: New filters and hooks in ga_appointments_shortcode.
+    - Enhancement: New filters and hooks in ga_provider_appointments_shortcode.
